@@ -396,7 +396,7 @@ $g_upgrade[46] = array( 'CreateTableSQL', array( db_get_table( 'user' ), "
 	username						C(32)	NOTNULL DEFAULT \" '' \",
 	realname						C(64)	NOTNULL DEFAULT \" '' \",
 	email							C(64)	NOTNULL DEFAULT \" '' \",
-	password						C(32)	NOTNULL DEFAULT \" '' \",
+	password						C(60)	NOTNULL DEFAULT \" '' \",
 	date_created					T		NOTNULL DEFAULT '" . db_null_date() . "',
 	last_visit						T		NOTNULL DEFAULT '" . db_null_date() . "',
 	enabled							L		NOTNULL DEFAULT \" '1' \",
@@ -423,7 +423,7 @@ $g_upgrade[51] = array( 'InsertData', array( db_get_table( 'user' ), "(
 		cookie_string
 	)
 	VALUES (
-		'administrator', '', 'root@localhost', '63a9f0ea7bb98050796b649e85481845',
+		'administrator', '', 'root@localhost', '" . password_hash('root', PASSWORD_BCRYPT) . "',
 		$t_timestamp, $t_timestamp, '1', '0', 90,
 		3, 0, 0, '"
 		. md5( mt_rand( 0, mt_getrandmax() ) + mt_rand( 0, mt_getrandmax() ) ) . md5( time() )
