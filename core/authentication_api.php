@@ -731,6 +731,10 @@ function auth_does_password_match( $p_user_id, $p_test_password ) {
 		BASIC_AUTH,
 	);
 
+	if ( BCRYPT == $t_configured_login_method ) {
+		return password_verify( $p_test_password, $t_password );
+	}
+
 	foreach( $t_login_methods as $t_login_method ) {
 		# pass the stored password in as the salt
 		if( auth_process_plain_password( $p_test_password, $t_password, $t_login_method ) == $t_password ) {
@@ -777,6 +781,9 @@ function auth_process_plain_password( $p_password, $p_salt = null, $p_method = n
 	}
 
 	switch( $t_login_method ) {
+		case BCRYPT:
+			$t_processed_password = password_hash( $p_password, PASSWORD_BCRYPT );
+			break;
 		case CRYPT:
 
 			# a null salt is the same as no salt, which causes a salt to be generated
