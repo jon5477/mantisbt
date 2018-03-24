@@ -43,6 +43,7 @@
  * @author Cvanca
  * @author Dvorapa
  * @author FikusModry
+ * @author Ilimanaq29
  * @author Jezevec
  * @author Kuvaly
  * @author Luk
@@ -906,6 +907,7 @@ $s_total_time = 'celkový čas';
 $s_developer_stats = 'vývojářské statistiky';
 $s_reporter_stats = 'reportérské statistiky';
 $s_orct = '(otevřené/vyřešené/uzavřené/celkem)';
+$s_summary_header = 'otevřený/vyřešený/zavřený/úplný/vyřešený poměr';
 $s_any = 'libovolné';
 $s_all = 'vše';
 $s_show = 'Ukázat';
@@ -1298,7 +1300,7 @@ $MANTIS_ERROR[ERROR_FILE_NOT_ALLOWED] = 'Nepovolený typ souboru pro upload.';
 $MANTIS_ERROR[ERROR_FILE_DUPLICATE] = 'Soubor tohoto jména již existuje, nejprve soubor prosím smažte.';
 $MANTIS_ERROR[ERROR_FILE_INVALID_UPLOAD_PATH] = 'Nedovolená cesta pro upload.  Adresář buď neexistuje, nebo do něj nelze zapisovat';
 $MANTIS_ERROR[ERROR_FILE_NO_UPLOAD_FAILURE] = 'Upload souboru neproběhl. Prosím vraťte se a vyberte soubor dříve než stisknete tlačítko "Nahrát".';
-$MANTIS_ERROR[ERROR_FILE_MOVE_FAILED] = 'Uploadovaný soubor nelze přesunout do adresáře pro uskladnění souborů. Adresář buď neexistuje, nebo do něj webserver nesmí zapisovat.';
+$MANTIS_ERROR[ERROR_FILE_MOVE_FAILED] = 'Nahrávaný soubor nelze přesunout do adresáře pro uskladnění souborů. Adresář buď neexistuje, nebo do něj webserver nesmí zapisovat.';
 $MANTIS_ERROR[ERROR_FILE_NOT_FOUND] = 'Příloha s Id "%1$d" nebyla nalezena.';
 $MANTIS_ERROR[ERROR_BUG_DUPLICATE_SELF] = 'Nemůžete nastavit, že problém je duplikátem sama sebe.';
 $MANTIS_ERROR[ERROR_BUG_REVISION_NOT_FOUND] = 'Revize problému nebyla nalezena.';
@@ -1372,7 +1374,6 @@ $MANTIS_ERROR[ERROR_PLUGIN_INVALID_FILE] = 'Formát zadaného Plugin souboru "%1
 $MANTIS_ERROR[ERROR_PLUGIN_GENERIC] = 'Při běhu pluginu "%2$s" se vyskytla neznámá chyba "%1$s".';
 $MANTIS_ERROR[ERROR_COLUMNS_DUPLICATE] = 'Pole \'%1$s\' obsahuje duplicitní sloupec \'%2$s\'.';
 $MANTIS_ERROR[ERROR_COLUMNS_INVALID] = 'Pole \'%1$s\' obsahuje neplatné pole \'%2$s\'';
-$MANTIS_ERROR[ERROR_SESSION_HANDLER_INVALID] = 'Neplatný řadič sezení.';
 $MANTIS_ERROR[ERROR_SESSION_VAR_NOT_FOUND] = 'Proměnná spojení "%1$s" nebyla nalezena.';
 $MANTIS_ERROR[ERROR_SESSION_NOT_VALID] = 'Spojení je neplatné.';
 $MANTIS_ERROR[ERROR_FORM_TOKEN_INVALID] = 'Neplatný zabezpečující token formuláře. Buď byl nechtě formulář odeslán dvakrát nebo došlo k vypršení časového limitu relace.';

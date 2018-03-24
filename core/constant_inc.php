@@ -21,7 +21,7 @@
 /**
  * Mantis Version
  */
-define( 'MANTIS_VERSION', '2.11.0-dev' );
+define( 'MANTIS_VERSION', '2.12.0' );
 define( 'FILTER_VERSION', 'v9' );
 
 # --- constants -------------------
@@ -422,6 +422,9 @@ define( 'ERROR_COLUMNS_INVALID', 2601 );
 
 # ERROR_SESSION_*
 define( 'ERROR_SESSION_HANDLER_INVALID', 2700 );
+# ERROR_SESSION_HANDLER_INVALID is no longer used in code
+# but can't be removed as long as it's used in one of the language files
+# for $MANTIS_ERROR[ERROR_SESSION_HANDLER_INVALID]
 define( 'ERROR_SESSION_VAR_NOT_FOUND', 2701 );
 define( 'ERROR_SESSION_NOT_VALID', 2702 );
 
@@ -612,7 +615,6 @@ define( 'LINKS_SAME_WINDOW', 1 );
 define( 'LINKS_NEW_WINDOW', 2 );
 
 # Auth Related Constants
-define( 'AUTH_COOKIE_LENGTH', 64 );
 define( 'API_TOKEN_LENGTH', 32 );
 
 # Obsolete / deprecated constants
