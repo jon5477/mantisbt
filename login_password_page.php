@@ -82,7 +82,7 @@ if( is_blank( $t_username ) ) {
 # Get the user id and based on the user decide whether to continue with native password credential
 # page or one provided by a plugin.
 $t_user_id = auth_get_user_id_from_login_name( $t_username );
-if( $t_user_id !== false && auth_credential_page( '', $t_user_id ) != AUTH_PAGE_CREDENTIAL ) {
+if( ( $t_user_id !== false && auth_credential_page( '', $t_user_id ) != AUTH_PAGE_CREDENTIAL ) || auth_credential_page( '', 0, $t_username ) != AUTH_PAGE_CREDENTIAL ) {
 	$t_query_args = array(
 		'username' => $t_username,
         'cookie_error' => $f_cookie_error,
@@ -99,7 +99,7 @@ if( $t_user_id !== false && auth_credential_page( '', $t_user_id ) != AUTH_PAGE_
 
 	$t_query_text = http_build_query( $t_query_args, '', '&' );
 
-	$t_redirect_url = auth_credential_page( $t_query_text, $t_user_id );
+	$t_redirect_url = $t_user_id !== false ? auth_credential_page( $t_query_text, $t_user_id ) : auth_credential_page( $t_query_text, 0, $t_username );
 	print_header_redirect( $t_redirect_url );
 }
 
