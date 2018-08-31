@@ -83,7 +83,6 @@ if( is_blank( $t_username ) ) {
 # page or one provided by a plugin.
 $t_user_id = auth_get_user_id_from_login_name( $t_username );
 $should_redirect = $t_user_id !== false ? auth_credential_page( '', $t_user_id ) != AUTH_PAGE_CREDENTIAL : auth_credential_page( '', 0, $t_username ) != AUTH_PAGE_CREDENTIAL;
-
 if( $should_redirect ) {
 	$t_query_args = array(
 		'username' => $t_username,
