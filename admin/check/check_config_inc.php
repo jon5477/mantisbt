@@ -76,8 +76,8 @@ check_print_test_warn_row( 'Check whether diagnostic logging is enabled',
 );
 
 check_print_test_warn_row( 'Check whether log output is sent to end user',
-	!($g_log_destination == 'firebug' || $g_log_destination == 'page'),
-	array( false => 'Diagnostic output destination is currently sent to end users browser' )
+	$g_log_destination !== 'page',
+	array( false => "Diagnostics output destination is currently set to end-user's browser" )
 );
 
 check_print_test_warn_row( 'Detailed errors should be OFF',
@@ -93,6 +93,12 @@ check_print_test_warn_row( 'Email debugging should be OFF',
 check_print_test_row( 'Default move category must exists ("default_category_for_moves")',
 	category_exists( config_get( 'default_category_for_moves' ) ),
 	array( false => 'Issues moved may end up with invalid category id.' )
+);
+
+# Deprecated Settings
+check_print_test_warn_row( 'Deprecated "limit_reporters" setting should no longer be used',
+	$g_limit_reporters == OFF,
+	array( false => 'Use "limit_view_unless_threshold" instead.' )
 );
 
 # Obsolete Settings

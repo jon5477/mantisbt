@@ -241,7 +241,7 @@ for( $j=0; $j < $t_row_count; $j++ ) {
 		<?php echo sprintf( lang_get( 'label' ), $t_lang_reporter ) ?>
 	</td>
 	<td>
-		<?php print_user_with_subject( $t_bug->reporter_id, $t_id ) ?>
+		<?php print_user( $t_bug->reporter_id, false ) ?>
 	</td>
 	<td class="bold">
 		<?php echo sprintf( lang_get( 'label' ), $t_lang_platform ) ?>
@@ -277,7 +277,7 @@ for( $j=0; $j < $t_row_count; $j++ ) {
 	<td>
 		<?php
 			if( access_has_bug_level( config_get( 'view_handler_threshold' ), $t_id ) ) {
-				print_user_with_subject( $t_bug->handler_id, $t_id );
+				print_user( $t_bug->handler_id, false );
 			}
 		?>
 	</td>
@@ -487,7 +487,7 @@ foreach( $t_related_custom_field_ids as $t_custom_field_id ) {
 				$c_date_added = date( $t_date_format, $t_attachment['date_added'] );
 				echo $c_filename . ' (' . $c_filesize . ' ' . lang_get( 'bytes' )
 					. ') <span class="italic-small">' . $c_date_added . '</span><br />'
-					. string_display_links( $t_path . $c_download_url );
+					. string_display_line_links( $t_path . $c_download_url );
 
 				if( $t_attachment['preview'] && $t_attachment['type'] == 'image' && $f_type_page == 'html' ) {
 					echo '<br /><img src="', $c_download_url, '" alt="', $t_attachment['alt'], '" /><br />';
@@ -536,7 +536,7 @@ $t_bugnotes = bugnote_get_all_visible_bugnotes( $t_id, $t_user_bugnote_order, $t
 	<td width="12%">
 				(<?php echo bugnote_format_id( $t_bugnote->id ) ?>)
 			<br />
-				<?php print_user( $t_bugnote->reporter_id ) ?>&#160;&#160;&#160;
+				<?php print_user( $t_bugnote->reporter_id, false ) ?>&#160;&#160;&#160;
 			<br />
 				<?php echo $t_date_submitted ?>&#160;&#160;&#160;
 				<?php if( $t_bugnote->date_submitted != $t_bugnote->last_modified ) {

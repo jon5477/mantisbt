@@ -788,6 +788,16 @@
                                 <entry>threshold to see who is monitoring an issue</entry>
                             </row>
                             <row>
+                                <entry>Add monitors to an issue</entry>
+                                <entry>$g_monitor_add_others_bug_threshold</entry>
+                                <entry>threshold to add users to the list of users monitoring an issue</entry>
+                            </row>
+                            <row>
+                                <entry>Remove monitors from an issue</entry>
+                                <entry>$g_monitor_delete_others_bug_threshold</entry>
+                                <entry>threshold to remove users from the list of users monitoring an issue</entry>
+                            </row>
+                            <row>
                                 <entry>Set status on assignment of handler</entry>
                                 <entry>$g_auto_set_status_to_assigned</entry>
                                 <entry>change status when an issue is assigned</entry>
@@ -798,10 +808,16 @@
                                 <entry>status to use when an issue is auto-assigned</entry>
                             </row>
                             <row>
-                                <entry>Limit reporter's access to their own issues</entry>
+                                <entry>Limit reporter's access to their own issues (deprecated option)</entry>
                                 <entry>$g_limit_reporters</entry>
                                 <entry>reporters can see only issues they reported. This setting is
                                     for all projects.
+                                </entry>
+                            </row>
+                            <row>
+                                <entry>Limit access only to those issues reported, handled, or monitored by the user</entry>
+                                <entry>$g_limit_view_unless_threshold</entry>
+                                <entry>threshold that, if not met, hides other users' issues.
                                 </entry>
                             </row>
                         </tbody>
@@ -878,6 +894,16 @@
                                 <entry>View Change Log</entry>
                                 <entry>$g_view_changelog_threshold</entry>
                                 <entry>threshold to view the changelog</entry>
+                            </row>
+                            <row>
+                                <entry>View Roadmap</entry>
+                                <entry>$g_roadmap_view_threshold</entry>
+                                <entry>threshold to view the roadmap</entry>
+                            </row>
+                            <row>
+                                <entry>View Summary</entry>
+                                <entry>$g_view_summary_threshold</entry>
+                                <entry>threshold to view the summary</entry>
                             </row>
                             <row>
                                 <entry>View Assigned To</entry>

@@ -138,18 +138,6 @@ $t_filter_project_id = filter_get_field( $f_filter_id, 'project_id' );
 					?>
 				</div>
 
-				<div class="widget-toolbox padding-8 clearfix">
-					<div class="btn-toolbar pull-left">
-						<div class="form-inline">
-							<label><?php echo lang_get( 'search' ) ?>&nbsp;
-								<input type="text" id="filter-search-txt" class="input-sm" size="16"
-									   name="<?php echo FILTER_PROPERTY_SEARCH ?>"
-									   value="<?php echo string_attribute( $t_filter[FILTER_PROPERTY_SEARCH] ) ?>">
-							</label>
-						</div>
-					</div>
-				</div>
-
 				<div class="table-responsive">
 					<table class="table table-bordered table-condensed table-striped">
 						<?php
@@ -185,14 +173,14 @@ $t_filter_project_id = filter_get_field( $f_filter_id, 'project_id' );
 								<?php if( ALL_PROJECTS != $t_filter_project_id ) { ?>
 								<label>
 									<input type="radio" class="ace input-sm" name="filter_project_id" value="<?php echo $t_filter_project_id ?>" <?php check_checked( ALL_PROJECTS != $t_filter_project_id ) ?>>
-									<span class="lbl padding-6"><?php echo lang_get( 'stored_project' ) . ' (' . project_get_name( $t_filter_project_id ) . ')' ?></span>
+									<span class="lbl padding-6"><?php echo lang_get( 'stored_project' ) . ' (' . string_display_line( project_get_name( $t_filter_project_id ) ) . ')' ?></span>
 								</label>
 								<br>
 								<?php } ?>
 								<?php if( $t_filter_project_id != $t_current_project_id ) { ?>
 								<label>
 									<input type="radio" class="ace input-sm" name="filter_project_id" value="<?php echo $t_current_project_id ?>">
-									<span class="lbl padding-6"><?php echo lang_get( 'current_project' ) . ' (' . project_get_name( $t_current_project_id ) . ')' ?></span>
+									<span class="lbl padding-6"><?php echo lang_get( 'current_project' ) . ' (' . string_display_line( project_get_name( $t_current_project_id ) ) . ')' ?></span>
 								</label>
 								<?php } ?>
 							</td>

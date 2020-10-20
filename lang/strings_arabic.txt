@@ -40,6 +40,7 @@
  *
  * @author Claw eg
  * @author DRIHEM
+ * @author HitomiAkane
  * @author Maroen1990
  * @author Meno25
  * @author Mido
@@ -304,10 +305,10 @@ $s_realname_label = 'الاسم الحقيقي';
 $s_email = 'البريد الإلكتروني';
 $s_email_label = 'البريد الإلكتروني';
 $s_password = 'كلمة السر';
-$s_new_password = 'كلمة المرور الجديدة';
+$s_new_password = 'كلمة السر الجديدة';
 $s_no_password_change = 'كلمة السر يتم التحكم بها بواسطة نظام آخر، لذا فلا يمكن تعديلها هنا.';
 $s_confirm_password = 'أكد كلمة السر';
-$s_current_password = 'كلمة المرور الحالية';
+$s_current_password = 'كلمة السر الحالية';
 $s_access_level = 'مستوى الدخول';
 $s_access_level_label = 'مستوى الدخول';
 $s_update_user_button = 'تحديث المستخدم';
@@ -316,7 +317,7 @@ $s_verify_change_password = 'يجب أن تضبط كلمة سر هنا ليسم�
 $s_api_tokens_link = 'رموز API';
 $s_api_token_create_form_title = 'أنشاء رموز API';
 $s_api_token_create_button = 'إنشاء رموز API';
-$s_api_token_name = 'إسم الرمز';
+$s_api_token_name = 'اسم الرمز';
 $s_api_token_disclose_message = 'الرمز المستخدم في الولوج إلى API.';
 $s_api_token_displayed_once = 'للعلم هذا الرمز لن يعرض إلا مرة واحدة فقط.';
 $s_api_tokens_title = 'رموز API';
@@ -464,6 +465,7 @@ $s_fixed_in_version = 'أصلحت في النسخة';
 $s_target_version = 'النسخة الهدف';
 $s_votes = 'أصوات';
 $s_summary = 'ملخص';
+$s_synthesis = 'تركيب';
 $s_description = 'الوصف';
 $s_steps_to_reproduce = 'الخطوات لإعادة الإنتاج';
 $s_update_information_button = 'تحديث المعلومات';
@@ -528,7 +530,7 @@ $s_login_button = 'تسجيل الدخول';
 $s_signup_link = 'تسجيل حساب جديد';
 $s_lost_password_link = 'فقدت كلمة سرك؟';
 $s_username_or_email = 'اسم المستخدم أو عنوان البريد الإلكتروني';
-$s_enter_password = 'أدخل كلمة المرور لـ\'%s\'';
+$s_enter_password = 'أدخل كلمة السر لـ\'%s\'';
 $s_select_project_button = 'اختر المشروع';
 $s_lost_password_title = 'إعادة ضبط كلمة السر';
 $s_lost_password_done_title = 'رسالة كلمة السر تم إرسالها';
@@ -589,6 +591,7 @@ $s_date_created = 'تاريخ الإنشاء';
 $s_last_visit = 'آخر زيارة';
 $s_last_visit_label = 'آخر زيارة:';
 $s_edit_user_link = 'عدل المستخدم';
+$s_search_user_hint = 'اسم المستخدم، الاسم الحقيقي أو البريد الإلكتروني';
 $s_separate_list_items_by = '(فصل قائمة البنود بـ "%1$s")';
 $s_config_all_projects = 'ملاحظة: عمليات الضبط هذه تؤثر على كل المشاريع، إلا لو تم تجاوزها لمشروع معين.';
 $s_config_project = 'ملاحظة: عمليات الضبط هذه تؤثر فقط على المشروع %1$s.';
@@ -662,6 +665,7 @@ $s_configuration_corrupted = 'الإعدادات في  قاعدة البيانا
 $s_set_configuration_option_action_create = 'إنشاء خيار التكوين';
 $s_set_configuration_option_action_edit = 'تعديل خيار التكوين';
 $s_set_configuration_option_action_clone = 'خيار تكوين الاستنساخ';
+$s_set_configuration_option_action_view = 'عرض خيار التكوين';
 $s_plugin = 'إضافة';
 $s_plugins_installed = 'الإضافات المنصبة';
 $s_plugins_available = 'الإضافات المتوفرة';
@@ -719,13 +723,16 @@ $s_actions = 'أفعال';
 $s_version = 'نسخة';
 $s_version_label = 'النسخة:';
 $s_timestamp = 'طابع زمني';
-$s_update = 'حدّث';
+$s_update = 'تحديث';
 $s_subprojects = 'مشاريع فرعية';
 $s_add_subproject = 'أضف كمشروع فرعي';
 $s_create_new_subproject_link = 'إنشاء مشروع فرعي جديد';
 $s_unlink_link = 'إزالة الوصلات';
 $s_show_global_users = 'عرض المستخدمين بالصلاحيات العامة';
 $s_hide_global_users = 'إخفاء المستخدمين بالصلاحيات العامة';
+$s_review_changes = 'عرض التغييرات';
+$s_review_changes_confirmation = 'هل أنت متأكد أنك تريد تطبيق التغييرات التالية؟';
+$s_review_changes_empty = 'لا توجد تغييرات مختارة';
 $s_add_project_title = 'إضافة مشروع';
 $s_upload_file_path = 'مسار ملف الرفع';
 $s_add_project_button = 'إضافة مشروع';
@@ -816,7 +823,7 @@ $s_project_file_deleted_msg = 'ملف المشروع تم حذفه';
 $s_confirm_file_delete_msg = 'هل أنت متأكد أنك تريد حذف هذا الملف؟';
 $s_filename = 'اسم الملف';
 $s_filename_label = 'اسم الملف:';
-$s_file_update_button = 'حدّث الملف';
+$s_file_update_button = 'تحديث الملف';
 $s_file_delete_button = 'حذف الملف';
 $s_project_documentation_title = 'وثائق المشروع';
 $s_user_documentation = 'وثائق المستخدم';
@@ -834,6 +841,8 @@ $s_add_user_button = 'إضافة مستخدم';
 $s_project_selection_title = 'اختيار المشروع';
 $s_remove_link = 'إزالة';
 $s_remove_all_link = 'إزالة الكل';
+$s_remove_project_user_title = 'إزالة وصول المستخدم من المشروع';
+$s_modify_project_user_title = 'تعديل وصول المستخدم في المشروع';
 $s_updated_user_msg = 'تم تحديث المستخدم بنجاح.';
 $s_must_enter_category = 'يجب أن تختار تصنيفا';
 $s_must_enter_severity = 'يجب أن تختار شدة.';
@@ -904,6 +913,7 @@ $s_developer_stats = 'إحصاءات المطور';
 $s_reporter_stats = 'إحصاءات المبلغ';
 $s_orct = '(مفتوحة/محلولة/مغلقة/إجمالي)';
 $s_summary_header = 'مفتوحة/محلوحة/مغلقة/مجموع/نسبة حل/نسبة';
+$s_summary_notice_filter_is_applied = 'هناك فلتر تم تطبيقه';
 $s_any = 'أي';
 $s_all = 'كل';
 $s_show = 'عرض';
@@ -924,8 +934,8 @@ $s_current = 'حالي';
 $s_search = 'بحث';
 $s_view_prev_link = 'عرض السابق';
 $s_view_next_link = 'عرض التالي';
-$s_prev = 'سابق';
-$s_next = 'تالي';
+$s_prev = 'السابق';
+$s_next = 'التالي';
 $s_first = 'أول';
 $s_last = 'آخر';
 $s_start_date_label = 'تاريخ البدء:';
@@ -962,6 +972,8 @@ $s_manage_filter_page_title = 'إدارة المرشحات';
 $s_manage_filter_edit_page_title = 'عدل المرشح';
 $s_delete_filter_button = 'حذف';
 $s_apply_filter_button = 'تطبيق';
+$s_temporary_filter = 'مرشح مؤقت';
+$s_set_as_persistent_filter = 'تعيين كمرشح مستمر';
 $s_view_simple_link = 'عرض بسيط';
 $s_product_build = 'نسخة المنتج';
 $s_system_profile = 'وصف النظام';
@@ -974,6 +986,8 @@ $s_move_bug_button = 'انقل';
 $s_attached_files = 'الملفات الملحقة';
 $s_publish = 'نشر';
 $s_add_user_to_monitor = 'أضف';
+$s_browser_does_not_support_audio = 'متصفحك لا يدعم وسم الصوت.';
+$s_browser_does_not_support_video = 'متصفحك لا يدعم وسم الفيديو.';
 $s_bug_view_title = 'عرض تفاصيل المشكلة';
 $s_no_users_monitoring_bug = 'لا يوجد مستخدمون يراقبون هذه القضية.';
 $s_users_monitoring_bug = 'المستخدمون الذين يراقبون هذه القضية';
@@ -1075,8 +1089,6 @@ $s_copy_from_parent = 'أنسخ بيانات ممتدة من مشكلة مشاب
 $s_copy_notes_from_parent = 'أنسخ ملاحظات الخلل';
 $s_copy_attachments_from_parent = 'أنسخ المرفقات';
 $s_with = 'مع';
-$s_viewing_bug_relationship_graph_title = 'رسمة العلاقة';
-$s_viewing_bug_dependency_graph_title = 'رسمة الاعتماد';
 $s_relation_graph = 'رسمة العلاقة';
 $s_dependency_graph = 'رسمة الاعتماد';
 $s_vertical = 'رأسي';
@@ -1098,6 +1110,8 @@ $s_update_issue_status = 'تحديث حالة القضية';
 $s_set_view_status = 'اضبط حالة الرؤية عند الإبلاغ عن قضية أو ملاحظة جديدة';
 $s_update_view_status = 'غير حالة الرؤية للقضايا أو الملاحظات الموجودة';
 $s_show_list_of_users_monitoring_issue = 'عرض قائمة بالمستخدمين الذين يراقبون القضية';
+$s_add_users_monitoring_issue = 'إضافة شاشات إلى قضية';
+$s_remove_users_monitoring_issue = 'إزالة المراقبين من قضية';
 $s_notes = 'ملاحظات';
 $s_add_notes = 'إضافة ملاحظات';
 $s_view_private_notes = 'رؤية ملاحظات الآخرين الخاصة';
@@ -1111,7 +1125,7 @@ $s_delete_attachment_button = 'حذف';
 $s_delete_attachment_sure_msg = 'هل أنت متأكد من أنك تريد حذف هذا الملحق؟';
 $s_upload_issue_attachments = 'رفع ملحقات القضية';
 $s_filters = 'مرشحات';
-$s_save_filters = 'احفظ المُرشِّحات';
+$s_save_filters = 'حفظ المرشحات';
 $s_save_filters_as_shared = 'حفظ الفلاتر كمشاركة';
 $s_use_saved_filters = 'استخدم المُرشِّحات المحفوظة';
 $s_create_project = 'إنشاء مشروع';
@@ -1141,6 +1155,14 @@ $s_email_on_deleted = 'أرسل رسالة عند الحذف';
 $s_email_on_sponsorship_changed = 'أرسل رسالة عند تغيير الرعاية';
 $s_email_on_relationship_changed = 'أرسل رسالة عند تغيير العلاقة';
 $s_email_on_updated = 'يتم تحديث البريد الإلكتروني';
+$s_email_on_monitor = 'البريد الإلكتروني عندما يبدأ المستخدم الرصد';
+$s_view_tags = 'عرض الوسوم المرفقة إلى خطأ';
+$s_attach_tags = 'إرفاق الوسوم إلى خطأ';
+$s_detach_tags = 'فصل الوسوم من خطأ';
+$s_detach_own_tags = 'فصل الوسوم المرفقة من قبل المستخدم نفسه';
+$s_create_new_tags = 'إنشاء وسوم جديدة';
+$s_edit_tags = 'تحرير أسماء وأوصاف الوسوم';
+$s_edit_own_tags = 'تحرير الوسوم التي أنشأها نفس المستخدم';
 $s_loading = 'جارٍ التحميل...';
 $s_between_date = 'بين';
 $s_on_or_before_date = 'في أو قبل';
@@ -1276,11 +1298,15 @@ $MANTIS_ERROR[ERROR_CONFIG_OPT_CANT_BE_SET_IN_DB] = 'خيار الضبط "%1$s" 
 $MANTIS_ERROR[ERROR_CONFIG_OPT_BAD_SYNTAX] = 'يتعذر تعيين خيار التكوين "%1$s": %2$s';
 $MANTIS_ERROR[ERROR_LANG_STRING_NOT_FOUND] = 'السلسلة "%1$s" لم يتم العثور عليها.';
 $MANTIS_ERROR[ERROR_BUGNOTE_NOT_FOUND] = 'الملاحظة لم يتم العثور عليها.';
-$MANTIS_ERROR[ERROR_PROJECT_NOT_FOUND] = 'المشروع "%1$s" لم يتم العثور عليه.';
 $MANTIS_ERROR[ERROR_DB_FIELD_NOT_FOUND] = 'حقل قاعدة البيانات "%1$s" لم يتم العثور عليه.';
 $MANTIS_ERROR[ERROR_HANDLER_ACCESS_TOO_LOW] = 'معالج القضايا لا يمتلك الصلاحية الكافية لمعالجة القضايا في هذه الحالة.';
+$MANTIS_ERROR[ERROR_PROJECT_HIERARCHY_DISABLED] = 'التسلسل الهرمي للمشروع (المشاريع الفرعية) معطل.';
+$MANTIS_ERROR[ERROR_PROJECT_NOT_FOUND] = 'المشروع "%1$s" لم يتم العثور عليه.';
 $MANTIS_ERROR[ERROR_PROJECT_NAME_NOT_UNIQUE] = 'يوجد مشروع بهذا الاسم بالفعل. من فضلك عد وأدخل اسما مختلفا.';
 $MANTIS_ERROR[ERROR_PROJECT_NAME_INVALID] = 'اسم مشروع غير صحيح تم تحديده. أسماء المشاريع لا يمكن أن تكون فارغة.';
+$MANTIS_ERROR[ERROR_PROJECT_RECURSIVE_HIERARCHY] = 'هذه العملية ستنشئ حلقة تكرار في بناء المشروع الفرعي.';
+$MANTIS_ERROR[ERROR_PROJECT_SUBPROJECT_DUPLICATE] = 'المشروع "%1$s" بالفعل مشروع فرعي لـ"%2$s".';
+$MANTIS_ERROR[ERROR_PROJECT_SUBPROJECT_NOT_FOUND] = 'المشروع "%1$s" ليس مشروعًا فرعيًا لـ"%2$s".';
 $MANTIS_ERROR[ERROR_USER_BY_NAME_NOT_FOUND] = 'المستخدم بالاسم "%1$s" لم يتم العثور عليه.';
 $MANTIS_ERROR[ERROR_USER_BY_ID_NOT_FOUND] = 'المستخدم بالرقم "%1$d" لم يتم العثور عليه.';
 $MANTIS_ERROR[ERROR_USER_BY_EMAIL_NOT_FOUND] = 'المستخدم بالبريد الإلكتروني "%1$s" غير موجود.';
@@ -1351,12 +1377,11 @@ $MANTIS_ERROR[ERROR_LOST_PASSWORD_NO_EMAIL_SPECIFIED] = 'يجب أن توفر ع
 $MANTIS_ERROR[ERROR_LOST_PASSWORD_NOT_MATCHING_DATA] = 'المعلومات الموفرة لا تطابق أي حساب مسجل!';
 $MANTIS_ERROR[ERROR_LOST_PASSWORD_CONFIRM_HASH_INVALID] = 'مسار التأكيد غير صحيح أو تم استخدامه بالفعل. من فضلك سجل حسابا مرة أخرى.';
 $MANTIS_ERROR[ERROR_LOST_PASSWORD_MAX_IN_PROGRESS_ATTEMPTS_REACHED] = 'العدد الأقصى من طلبات العمق تم الوصول إليه. من فضلك اتصل بإداري النظام.';
-$MANTIS_ERROR[ERROR_PROJECT_RECURSIVE_HIERARCHY] = 'هذه العملية ستنشئ حلقة تكرار في بناء المشروع الفرعي.';
 $MANTIS_ERROR[ERROR_USER_CHANGE_LAST_ADMIN] = 'أنت لا يمكنك إزالة آخر حساب إداري. لتنفيذ الفعل الذي طلبته، تحتاج إلى إنشاء حساب إداري آخر.';
 $MANTIS_ERROR[ERROR_PAGE_REDIRECTION] = 'خطأ تحويل صفحة، تأكد من أنه لا توجد فراغات خارج قطعة PHP (&lt;?php ?&gt;) في ملفات config_inc.php أو custom_*.php.';
-$MANTIS_ERROR[ERROR_TAG_NOT_FOUND] = 'لم يمكن العثور على وسم بهذا الاسم.';
-$MANTIS_ERROR[ERROR_TAG_DUPLICATE] = 'وسم بهذا الاسم موجود بالفعل.';
-$MANTIS_ERROR[ERROR_TAG_NAME_INVALID] = 'اسم الوسم هذا غير صحيح.';
+$MANTIS_ERROR[ERROR_TAG_NOT_FOUND] = 'لم يتم العثور على الوسم "%1$s".';
+$MANTIS_ERROR[ERROR_TAG_DUPLICATE] = 'الوسم "%1$s" موجود مسبقاً.';
+$MANTIS_ERROR[ERROR_TAG_NAME_INVALID] = 'الوسم "%1$s" غير صالح.';
 $MANTIS_ERROR[ERROR_TAG_NOT_ATTACHED] = 'هذا الوسم ليس ملحقا بهذه العلة.';
 $MANTIS_ERROR[ERROR_TAG_ALREADY_ATTACHED] = 'هذا الوسم ملحق بالفعل بهذه العلة.';
 $MANTIS_ERROR[ERROR_TOKEN_NOT_FOUND] = 'النص لم يمكن العثور عليه.';
@@ -1392,7 +1417,8 @@ $MANTIS_ERROR[ERROR_BUG_CONFLICTING_EDIT] = 'تم تحديث هذه القضية
 $MANTIS_ERROR[ERROR_SPAM_SUSPECTED] = 'لقد وصلت إلى حد النشاط المسموح به لالأحداث %d ضمن ال %d ثواني الأخيرة. تم حظر العمل الخاصة بك لتجنب السخام; يرجى المحاولة مرة أخرى في وقت لاحق.';
 $MANTIS_ERROR[ERROR_FIELD_TOO_LONG] = 'الحقل "%1$s" يجب أن يكون أقصر أو يساوي %2$d حرفا.';
 $MANTIS_ERROR[ERROR_API_TOKEN_NAME_NOT_UNIQUE] = 'اسم رمز API "%s" قيد الاستخدام بالفعل; تُرجَى العودة واختيار واحد آخر.';
-$s_dropzone_default_message = 'أفلت الملفات هنا للرفع (أو انقر)';
+$MANTIS_ERROR[ERROR_LOGFILE_NOT_WRITABLE] = 'الملف المحدد في $g_log_destination "%s" غير قابل للكتابة عليه.';
+$s_dropzone_default_message = 'قم بإرفاق الملفات عن طريق سحبها وإفلاتها، أو تحديدها ولصقها.';
 $s_dropzone_fallback_message = 'لا يدعم متصفحك عمليات رفع ملفات drag\'n\'drop.';
 $s_dropzone_file_too_big = 'الملف ملف كبير جدا ({{filesize}} ميبي بايت)، أقصى حجم: {{maxFilesize}} ميبي بايت.';
 $s_dropzone_invalid_file_type = 'لا يمكن تحميل ملفات من هذا النوع.';
@@ -1402,3 +1428,10 @@ $s_dropzone_cancel_upload_confirmation = 'هل أنت متأكد أنك تريد
 $s_dropzone_remove_file = 'إزالة ملف';
 $s_dropzone_max_files_exceeded = 'لا يمكنك رفع أية ملفات أخرى.';
 $s_dropzone_not_supported = 'Dropzone.js لا يدعم المتصفحات القديمة!';
+$s_dropzone_multiple_files_too_big = 'الملفات التالية:{{files}} تتجاوز حجم الملفات الأقصى المسموح به ({{maxFilesize}} MiB)';
+$s_save = 'حفظ';
+$s_reset = 'إعادة ضبط';
+$s_persist = 'ثابر';
+$s_load = 'تحميل';
+$s_apply_changes = 'تطبيق التغييرات';
+$s_undo = 'رجوع';

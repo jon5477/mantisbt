@@ -47,12 +47,15 @@
  * @author Macofe
  * @author Mansoft
  * @author Mazab IZW
+ * @author MojaEdukacja
  * @author Py64
+ * @author Rail
  * @author Rambro
  * @author Rezonansowy
  * @author Sp5uhe
  * @author Stojex
  * @author Szmyk
+ * @author Tszypowski
  * @author Ty221
  * @author Woytecr
  */
@@ -71,11 +74,11 @@ $s_actiongroup_menu_update_view_status = 'Aktualizuj widoczność';
 $s_actiongroup_menu_update_category = 'Aktualizuj kategorię';
 $s_actiongroup_menu_set_sticky = 'Przyklej lub odklej';
 $s_actiongroup_menu_update_field = 'Aktualizuj %1$s';
-$s_actiongroup_menu_update_product_version = 'Zaktualizuj wersję produktu';
+$s_actiongroup_menu_update_product_version = 'Aktualizuj wersję produktu';
 $s_actiongroup_menu_update_target_version = 'Edytuj docelową wersję';
 $s_actiongroup_menu_update_fixed_in_version = 'Aktualizuj naprawione w wersji';
 $s_actiongroup_menu_update_product_build = 'Uaktualnij wersję produktu';
-$s_actiongroup_menu_update_due_date = 'Zaktualizuj termin realizacji';
+$s_actiongroup_menu_update_due_date = 'Aktualizuj termin realizacji';
 $s_actiongroup_menu_add_note = 'Dodaj komentarz';
 $s_actiongroup_menu_attach_tags = 'Dołącz tagi';
 $s_actiongroup_bugs = 'Wybrane zgłoszenia';
@@ -92,7 +95,7 @@ $s_excel_export = 'Eksport do Excela';
 $s_login_anonymously = 'Logowanie anonimowe';
 $s_anonymous = 'Anonimowy';
 $s_jump_to_bugnotes = 'Przejdź do komentarzy';
-$s_jump_to_history = 'Przejdź do histori';
+$s_jump_to_history = 'Przejdź do historii';
 $s_display_history = 'Wyświetl historię';
 $s_public_project_msg = 'Ten projekt jest publiczny. Wszyscy użytkownicy mają do niego dostęp.';
 $s_private_project_msg = 'Ten projekt jest prywatny. Jedynie administratorzy i ręcznie dodani użytkownicy mają do niego dostęp.';
@@ -179,7 +182,7 @@ $s_category_bugs_conf_msg = 'Wybierz kategorię zgłoszeń';
 $s_set_sticky_bugs_conf_msg = 'Czy jesteś pewien, że chcesz ustawić lub usunąć przyklejenie tych zgłoszeń?';
 $s_product_version_bugs_conf_msg = 'Zaktualizuj wersję produktu do';
 $s_fixed_in_version_bugs_conf_msg = 'Zaktualizuj naprawiono w wersji do';
-$s_target_version_bugs_conf_msg = 'Zaktualizuj wersję docelową do';
+$s_target_version_bugs_conf_msg = 'Aktualizuj wersję docelową';
 $s_due_date_bugs_conf_msg = 'Zaktualizuj termin realizacji do';
 $s_close_group_bugs_button = 'Zamknij zgłoszenia';
 $s_delete_group_bugs_button = 'Usuń zgłoszenia';
@@ -301,7 +304,7 @@ $s_confirm_delete_msg = 'Czy na pewno chcesz usunąć swoje konto?';
 $s_delete_account_button = 'Usuń Konto';
 $s_manage_profiles_link = 'Profile';
 $s_change_preferences_link = 'Preferencje';
-$s_edit_account_title = 'Edytycja konta';
+$s_edit_account_title = 'Edycja konta';
 $s_username = 'Nazwa użytkownika';
 $s_username_label = 'Nazwa użytkownika';
 $s_realname = 'Imię i nazwisko';
@@ -740,7 +743,7 @@ $s_edit_project_version_title = 'Edycja wersji projektu';
 $s_update_version_button = 'Aktualizuj wersję';
 $s_released = 'Opublikowana';
 $s_not_released = 'Jeszcze nie wypuszczone';
-$s_scheduled_release = 'Zaplanowane wypuszczenie';
+$s_scheduled_release = 'Zaplanowane wydanie';
 $s_obsolete = 'Przestarzałe';
 $s_version_updated_msg = 'Wersja została pomyślnie zaktualizowana...';
 $s_account_delete_protected_msg = 'Konto jest zabezpieczone. Nie można usunąć tego konta.';
@@ -928,6 +931,7 @@ $s_last = 'Ostatnie';
 $s_start_date_label = 'Data rozpoczęcia:';
 $s_end_date_label = 'Data końcowa:';
 $s_use_date_filters = 'Używaj filtrów daty';
+$s_use_last_updated_date_filters = 'Filtruj według daty ostatniej aktualizacji';
 $s_yes = 'Tak';
 $s_no = 'Nie';
 $s_open_filters = 'Zmień filtr';
@@ -952,6 +956,8 @@ $s_edit_filter = 'Edytuj Filtr';
 $s_owner = 'Właściciel';
 $s_update_filter = 'Uaktualnij filtr';
 $s_current_project = 'Bieżący projekt';
+$s_stored_project = 'Przechowywane projekty';
+$s_available_filter_for_project = 'Dostępne filtry dla projektu';
 $s_manage_filter_page_title = 'Zarządzaj filtrami';
 $s_manage_filter_edit_page_title = 'Edytuj filtr';
 $s_delete_filter_button = 'Usuń';
@@ -968,6 +974,8 @@ $s_move_bug_button = 'Przenieś';
 $s_attached_files = 'Dołączone pliki';
 $s_publish = 'Opublikuj';
 $s_add_user_to_monitor = 'Dodaj';
+$s_browser_does_not_support_audio = 'Twoja przeglądarka nie obsługuje tagu audio.';
+$s_browser_does_not_support_video = 'Twoja przeglądarka nie obsługuje tagu video.';
 $s_bug_view_title = 'Wyświetl szczegóły problemu';
 $s_no_users_monitoring_bug = 'Nikt nie obserwuje tego zgłoszenia.';
 $s_users_monitoring_bug = 'Użytkownicy obserwujący to zgłoszenie';
@@ -1040,11 +1048,13 @@ $s_sponsorship_more_info = 'Więcej informacji o sponsorowaniu';
 $s_sponsorship_total = 'Sponsorowanie – łączna liczba';
 $s_changelog = 'Lista zmian';
 $s_changelog_empty = 'Lista zmian niedostępna';
+$s_changelog_empty_manager = 'Brak dostępnych informacji o Liście Zmian. Problemy są uwzględniane, gdy projekty posiadają wersje, oraz są rozwiązywane przy pomocy "naprawiono w wersji".';
 $s_roadmap = 'Plan pracy';
 $s_resolved_progress = '%1$d z %2$d zgłoszeń zrealizowano. Postęp (%3$d%%).';
+$s_roadmap_empty_manager = 'Brak dostępnych informacji o Planie Pracy. Problemy pojawią się, gdy projekty mają przypisane wersje a problemy posiadają ustawioną "Wersję docelową".';
 $s_http_auth_realm = 'Logowanie do MantisBT';
 $s_bug = 'zgłoszenie';
-$s_bugs = 'kwestie';
+$s_bugs = 'zgłoszenia';
 $s_add_new_relationship = 'Nowe powiązanie';
 $s_add_new_relationship_button = 'Dodaj';
 $s_this_bug = 'Bieżące zgłoszenia';
@@ -1064,8 +1074,7 @@ $s_bug_created_from = 'Zgłoszenie wygenerowane z';
 $s_copy_from_parent = 'Skopiuj rozszerzone dane z nadrzędnego problemu';
 $s_copy_notes_from_parent = 'Skopiuj notatki błędu';
 $s_copy_attachments_from_parent = 'Skopiuj załączniki';
-$s_viewing_bug_relationship_graph_title = 'Graf powiązań';
-$s_viewing_bug_dependency_graph_title = 'Wykres zależności';
+$s_with = 'z';
 $s_relation_graph = 'Graf powiązań';
 $s_dependency_graph = 'Graf zależności';
 $s_vertical = 'Pionowy';
@@ -1249,6 +1258,7 @@ $MANTIS_ERROR[ERROR_FILE_DISALLOWED] = 'Typ przesyłanego pliku nie jest dozwolo
 $MANTIS_ERROR[ERROR_NO_DIRECTORY] = 'Podany katalog nie istnieje. Sprawdź ustawienia projektu.';
 $MANTIS_ERROR[ERROR_DUPLICATE_PROJECT] = 'Istnieje już projekt o takiej nazwie.';
 $MANTIS_ERROR[ERROR_EMPTY_FIELD] = 'Wymagane pole „%1$s” nie zostało wypełnione. Sprawdź wprowadzone dane.';
+$MANTIS_ERROR[ERROR_INVALID_FIELD_VALUE] = 'Nieprawidłowa wartość dla \'%1$s\'';
 $MANTIS_ERROR[ERROR_PROTECTED_ACCOUNT] = 'Konto jest zabezpieczone. Nie masz uprawnień dostępu do tego konta dopóki zabezpieczenie jest aktywne.';
 $MANTIS_ERROR[ERROR_ACCESS_DENIED] = 'Brak dostępu.';
 $MANTIS_ERROR[ERROR_UPLOAD_FAILURE] = 'Przesyłanie nie powiodło się. Plik nie mógł zostać odczytany przez MantisBT. Sprawdź konfigurację serwera.';
@@ -1261,11 +1271,12 @@ $MANTIS_ERROR[ERROR_CONFIG_OPT_CANT_BE_SET_IN_DB] = 'Opcja konfiguracyjna „%1$
 $MANTIS_ERROR[ERROR_CONFIG_OPT_BAD_SYNTAX] = 'Nie można ustawić opcji konfiguracji "%1$s": %2$s';
 $MANTIS_ERROR[ERROR_LANG_STRING_NOT_FOUND] = 'Napis „%1$s” nie został odnaleziony.';
 $MANTIS_ERROR[ERROR_BUGNOTE_NOT_FOUND] = 'Nie znaleziono komentarza.';
-$MANTIS_ERROR[ERROR_PROJECT_NOT_FOUND] = 'Nie znaleziono projektu „%1$s”.';
 $MANTIS_ERROR[ERROR_DB_FIELD_NOT_FOUND] = 'Nie znaleziono pola „%1$s” w bazie danych.';
 $MANTIS_ERROR[ERROR_HANDLER_ACCESS_TOO_LOW] = 'Operator nie ma wystarczających uprawnień do modyfikacji zgłoszenia z tym statusem.';
+$MANTIS_ERROR[ERROR_PROJECT_NOT_FOUND] = 'Nie znaleziono projektu „%1$s”.';
 $MANTIS_ERROR[ERROR_PROJECT_NAME_NOT_UNIQUE] = 'Projekt o tej nazwie już istnieje. Proszę wrócić i podać inną nazwę.';
 $MANTIS_ERROR[ERROR_PROJECT_NAME_INVALID] = 'Podano nieprawidłową nazwę projektu. Nazwa projektu nie może być pusta.';
+$MANTIS_ERROR[ERROR_PROJECT_RECURSIVE_HIERARCHY] = 'Ta operacja spowodowałaby pętlę w hierarchii podprojektów.';
 $MANTIS_ERROR[ERROR_USER_BY_NAME_NOT_FOUND] = 'Brak użytkownika o nazwie „%1$s”.';
 $MANTIS_ERROR[ERROR_USER_BY_ID_NOT_FOUND] = 'Brak użytkownika o id „%1$d”.';
 $MANTIS_ERROR[ERROR_AUTH_INVALID_COOKIE] = 'Informacja o logowaniu przechowywana przez Twoją przeglądarkę jest nieprawidłowa.  Być może Twoje konto zostało usunięte.';
@@ -1334,7 +1345,6 @@ $MANTIS_ERROR[ERROR_LOST_PASSWORD_NO_EMAIL_SPECIFIED] = 'Musisz podać adres ema
 $MANTIS_ERROR[ERROR_LOST_PASSWORD_NOT_MATCHING_DATA] = 'Wprowadzone dane nie pasują do żadnego zarejestrowanego konta!';
 $MANTIS_ERROR[ERROR_LOST_PASSWORD_CONFIRM_HASH_INVALID] = 'Adres potwierdzający jest nieprawidłowy lub został już użyty. Proszę zapisać się ponownie.';
 $MANTIS_ERROR[ERROR_LOST_PASSWORD_MAX_IN_PROGRESS_ATTEMPTS_REACHED] = 'Osiągnięto maksymalną liczbę oczekujących żądań. Proszę skonaktować się z administratorem.';
-$MANTIS_ERROR[ERROR_PROJECT_RECURSIVE_HIERARCHY] = 'Ta operacja spowodowałaby pętlę w hierarchii podprojektów.';
 $MANTIS_ERROR[ERROR_USER_CHANGE_LAST_ADMIN] = 'Nie możesz usunąć lub zmienić poziomu dostępu jedynego administratora systemu. Przeprowadzenie operacji, którą próbujesz wykonać będzie możliwe dopiero po utworzeniu innego konta administratora.';
 $MANTIS_ERROR[ERROR_PAGE_REDIRECTION] = 'Błąd przekierowania, prosze upenić się, że spacje nie występują poza blokiem PHP (&lt;?php ?&gt;) w plikach config_inc.php lub custom_*.php.';
 $MANTIS_ERROR[ERROR_TAG_NOT_FOUND] = 'Nie można znaleźć taga o podanej nazwie.';
@@ -1342,7 +1352,7 @@ $MANTIS_ERROR[ERROR_TAG_DUPLICATE] = 'Tag o podanej nazwie już istnieje.';
 $MANTIS_ERROR[ERROR_TAG_NAME_INVALID] = 'Nazwa tagu jest nieprawidłowa.';
 $MANTIS_ERROR[ERROR_TAG_NOT_ATTACHED] = 'Ten tag nie jest powiązany z tym błędem.';
 $MANTIS_ERROR[ERROR_TAG_ALREADY_ATTACHED] = 'Ten tag już jest powiązany z tym błędem.';
-$MANTIS_ERROR[ERROR_TOKEN_NOT_FOUND] = 'Token could not be found.';
+$MANTIS_ERROR[ERROR_TOKEN_NOT_FOUND] = 'Nie znaleziono tokena';
 $MANTIS_ERROR[ERROR_EVENT_UNDECLARED] = 'Zdarzenie „%1$s” nie zostało jeszcze zadeklarowane.';
 $MANTIS_ERROR[ERROR_PLUGIN_NOT_REGISTERED] = 'Wtyczka „%1$s” nie jest zarejestrowana.';
 $MANTIS_ERROR[ERROR_PLUGIN_NOT_LOADED] = 'Wtyczka "%1$s" nie jest załadowana, upewnij się, że są spełnione jej zależności.';
@@ -1371,3 +1381,8 @@ $s_dropzone_cancel_upload_confirmation = 'Czy na pewno chcesz przerwać przesył
 $s_dropzone_remove_file = 'Usuń plik';
 $s_dropzone_max_files_exceeded = 'Nie możesz przesłać kolejnych plików.';
 $s_dropzone_not_supported = 'Dropzone.js nie wspiera starszych przeglądarek!';
+$s_save = 'Zapisz';
+$s_reset = 'Resetuj';
+$s_load = 'Wczytaj';
+$s_apply_changes = 'Zastosuj';
+$s_undo = 'Cofnij';

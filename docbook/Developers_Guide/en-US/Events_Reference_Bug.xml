@@ -22,7 +22,7 @@
 
 				<para>
 					Any output here should be defining appropriate rows and columns for the
-					surrounding <programlisting>&lt;table&gt;</programlisting> elements.
+					surrounding <filename>&lt;table&gt;</filename> elements.
 				</para>
 
 				<itemizedlist>
@@ -44,7 +44,7 @@
 
 				<para>
 					Any output here should be contained within its own
-					<programlisting>&lt;table&gt;</programlisting> element.
+					<filename>&lt;table&gt;</filename> element.
 				</para>
 
 				<itemizedlist>
@@ -71,7 +71,7 @@
 
 				<para>
 					Any output here should be defining appropriate rows and columns for the
-					surrounding &lt;table&gt; elements.
+					surrounding <filename>&lt;table&gt;</filename> elements.
 				</para>
 
 				<itemizedlist>
@@ -93,7 +93,7 @@
 
 				<para>
 					Any output here should be defining appropriate rows and columns for the
-					surrounding &lt;table&gt; elements.
+					surrounding <filename>&lt;table&gt;</filename> elements.
 				</para>
 
 				<itemizedlist>
@@ -191,7 +191,7 @@
 
 				<para>
 					Any output here should be defining appropriate rows and columns for the
-					surrounding &lt;table&gt; elements.
+					surrounding <filename>&lt;table&gt;</filename> elements.
 				</para>
 
 				<itemizedlist>
@@ -254,7 +254,7 @@
 
 				<para>
 					Any output here should be defining appropriate rows and columns for the
-					surrounding &lt;table&gt; elements.
+					surrounding <filename>&lt;table&gt;</filename> elements.
 				</para>
 
 				<itemizedlist>
@@ -330,7 +330,7 @@
 
 				<para>
 					Any output here should be defining appropriate rows and columns for the
-					surrounding &lt;table&gt; elements.
+					surrounding <filename>&lt;table&gt;</filename> elements.
 				</para>
 
 				<itemizedlist>
@@ -353,7 +353,7 @@
 
 				<para>
 					Any output here should be defining appropriate rows and columns for the
-					surrounding &lt;table&gt; elements.
+					surrounding <filename>&lt;table&gt;</filename> elements.
 				</para>
 
 				<itemizedlist>
@@ -376,7 +376,7 @@
 
 				<para>
 					Any output here should be defining appropriate rows and columns for the
-					surrounding &lt;table&gt; elements.
+					surrounding <filename>&lt;table&gt;</filename> elements.
 				</para>
 
 				<itemizedlist>
@@ -403,12 +403,33 @@
 
 				<para>
 					Any output here should be defining appropriate rows and columns for the
-					surrounding &lt;table&gt; elements.
+					surrounding <filename>&lt;table&gt;</filename> elements.
 				</para>
 
 				<itemizedlist>
 					<title>Parameters</title>
 					<listitem><para>&lt;Integer&gt;: Bug ID</para></listitem>
+				</itemizedlist>
+			</blockquote>
+		</blockquote>
+
+		<blockquote id="dev.eventref.bug.noteaction.data">
+			<title>EVENT_BUGNOTE_DATA (Chained)</title>
+
+			<blockquote>
+				<para>
+					This event allows plugins to preprocess bugnote contents.
+				</para>
+
+				<itemizedlist>
+					<title>Parameters</title>
+					<listitem><para>&lt;String&gt;: Bugnote text</para></listitem>
+					<listitem><para>&lt;String&gt;: Bug Id</para></listitem>
+				</itemizedlist>
+
+				<itemizedlist>
+					<title>Return value</title>
+					<listitem><para>&lt;String&gt;: Updated Bugnote text</para></listitem>
 				</itemizedlist>
 			</blockquote>
 		</blockquote>
@@ -424,8 +445,9 @@
 
 				<itemizedlist>
 					<title>Parameters</title>
-					<listitem><para>&lt;Integer&gt;: Bug ID</para></listitem>
-					<listitem><para>&lt;Integer&gt;: Bugnote ID</para></listitem>
+					<listitem><para>&lt;Integer&gt;: (Key = 0) Bug ID</para></listitem>
+					<listitem><para>&lt;Integer&gt;: (Key = 1) Bugnote ID</para></listitem>
+					<listitem><para>&lt;array&gt;: (Key = "files") Files info (name, size, id), starting 2.23.0</para></listitem>
 				</itemizedlist>
 			</blockquote>
 		</blockquote>
@@ -442,7 +464,7 @@
 
 				<para>
 					Any output here should be defining appropriate rows and columns for the
-					surrounding &lt;table&gt; elements.
+					surrounding <filename>&lt;table&gt;</filename> elements.
 				</para>
 
 				<itemizedlist>

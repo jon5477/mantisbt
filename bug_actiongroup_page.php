@@ -225,7 +225,9 @@ switch( $f_action ) {
 		break;
 	case 'CUSTOM' :
 		$t_custom_field_def = custom_field_get_definition( $t_custom_field_id );
-		$t_question_title = sprintf( lang_get( 'actiongroup_menu_update_field' ), lang_get_defaulted( $t_custom_field_def['name'] ) );
+		$t_question_title = sprintf( lang_get( 'actiongroup_menu_update_field' ),
+			string_attribute( lang_get_defaulted( $t_custom_field_def['name'] ) )
+		);
 		$t_button_title = $t_question_title;
 		$t_form = 'custom_field_' . $t_custom_field_id;
 		$t_event_params['custom_field_id'] = $t_custom_field_id;
@@ -303,7 +305,7 @@ if( $t_multiple_projects ) {
 				'" value="' . $t_date_to_display . '" />';
 			echo '<i class="fa fa-calendar fa-xlg datetimepicker"></i>';
 		} else {
-			echo '<select name="' . $t_form . '" class="input-sm">';
+			echo '<select name="' . $t_form . '" class="input-sm" required>';
 
 			switch( $f_action ) {
 				case 'COPY':
@@ -330,11 +332,11 @@ if( $t_multiple_projects ) {
 					print_enum_string_option_list( 'view_state', config_get( 'default_bug_view_status' ) );
 					break;
 				case 'UP_TARGET_VERSION':
-					print_version_option_list( '', $t_project_id, VERSION_FUTURE, true, true );
+					print_version_option_list( '', $t_projects, VERSION_FUTURE, true );
 					break;
 				case 'UP_PRODUCT_VERSION':
 				case 'UP_FIXED_IN_VERSION':
-					print_version_option_list( '', $t_project_id, VERSION_ALL, true, true );
+					print_version_option_list( '', $t_projects, VERSION_ALL, true );
 					break;
 			}
 
@@ -409,7 +411,7 @@ if( $t_multiple_projects ) {
 						<label class="lbl padding-6"><?php echo lang_get( 'private' ); ?></label>
 <?php
 			} else {
-				echo get_enum_element( 'project_view_state', $t_default_bugnote_view_status );
+				echo get_enum_element( 'view_state', $t_default_bugnote_view_status );
 			}
 ?>
 					</td>
