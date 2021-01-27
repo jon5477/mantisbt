@@ -967,6 +967,7 @@ function print_build_option_list( $p_build = '' ) {
 function print_enum_string_option_list( $p_enum_name, $p_val = 0 ) {
 	$t_config_var_name = $p_enum_name . '_enum_string';
 	$t_config_var_value = config_get( $t_config_var_name );
+	$t_string_var = lang_get( $t_config_var_name );
 
 	if( is_array( $p_val ) ) {
 		$t_val = $p_val;
@@ -977,11 +978,11 @@ function print_enum_string_option_list( $p_enum_name, $p_val = 0 ) {
 	$t_enum_values = MantisEnum::getValues( $t_config_var_value );
 
 	foreach ( $t_enum_values as $t_key ) {
-		$t_elem2 = get_enum_element( $p_enum_name, $t_key );
+		$t_label = MantisEnum::getLocalizedLabel( $t_config_var_value, $t_string_var, $t_key );
 
 		echo '<option value="' . $t_key . '"';
 		check_selected( $t_val, $t_key );
-		echo '>' . string_html_specialchars( $t_elem2 ) . '</option>';
+		echo '>' . string_html_specialchars( $t_label ) . '</option>';
 	}
 }
 
@@ -1377,7 +1378,7 @@ function print_view_bug_sort_link( $p_string, $p_sort_field, $p_sort, $p_dir, $p
  * @param string  $p_class         The CSS class of the link.
  * @return void
  */
-function print_manage_user_sort_link( $p_page, $p_string, $p_field, $p_dir, $p_sort_by, $p_hide_inactive = 0, $p_filter = ALL, $p_search, $p_show_disabled = 0, $p_class = '' ) {
+function print_manage_user_sort_link( $p_page, $p_string, $p_field, $p_dir, $p_sort_by, $p_hide_inactive = 0, $p_filter = 'ALL', $p_search = '', $p_show_disabled = 0, $p_class = '' ) {
 	if( $p_sort_by == $p_field ) {
 		# If this is the selected field flip the order
 		if( 'ASC' == $p_dir || ASCENDING == $p_dir ) {
